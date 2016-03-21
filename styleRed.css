@@ -1,0 +1,42 @@
+.container {
+	width: 100%;
+}
+
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+	width: 20%;
+	color: transparent;
+	background-color: white;
+	animation: color-change 3s infinite;
+	animation-play-state: paused;
+}
+
+[class*='col-']:hover {
+	animation-play-state: running;
+	
+}
+
+@keyframes color-change {
+	0% {background-color: #ffffff}
+	5% {background-color: d1a92b} /* mustard */
+	10% {
+		background-color: #f2b079 /* peach */
+	}
+	25% {
+		background-color: #b54d46 /* dark rose-salmon */
+	}
+	50% {
+		background-color: #66154d /* plum */
+	}
+	75% {
+		background-color: #b94c68 /* princess pink */
+	}
+	100% {
+		background-color: #c39292
+	}
+}
+
+
+
+
